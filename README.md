@@ -1,8 +1,6 @@
-# my-gulp-starterkit
-## gulp 
-## sass 
-## browsersync 
-
-
+## gulp sass browsersync   
 # How can ı start ?
-$gulp watch
+```
+git clone
+gulp watch
+```

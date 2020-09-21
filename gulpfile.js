@@ -14,11 +14,12 @@ function watch() {
         server: {
             baseDir: "./src",
             index: "/index.html"
-        }
+        },
+        notify: false
     });
     gulp.watch('src/scss/**/*.scss', style)
-    gulp.watch('./*.html').on('change', browserSync.reload);
-    gulp.watch('./js/**/*.js').on('change', browserSync.reload);
+    gulp.watch('src/*.html').on('change', browserSync.reload);
+    gulp.watch('src/js/**/*.js').on('change', browserSync.reload);
 }
 exports.style = style;
 exports.watch = watch;

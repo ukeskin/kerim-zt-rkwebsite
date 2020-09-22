@@ -1,13 +1,30 @@
-window.addEventListener("load", () => {
-    const sounds = document.querySelectorAll(".sound");
-    const pads = document.querySelectorAll(".pads div");
-    const visual = document.querySelector(".visual");
-    
-  pads.forEach((pad, index) => {
-    pad.addEventListener("click", function() {
-      sounds[index].currentTime = 0;
-      sounds[index].play();
-      createBubble(index);
+$(document).ready(function() {
+    $("#play").click(function() {
+       $(this).addClass("hide");
+       $("#pause").removeClass("hide");
     });
+    $("#pause").click(function() {
+       $(this).addClass("hide");
+       $("#play").removeClass("hide");
+    });
+
+    $("#play").click(function() {
+      $(this).addClass("hide");
+      $("#pause").removeClass("hide");
+   });
+   $("#pause").click(function() {
+      $(this).addClass("hide");
+      $("#play").removeClass("hide");
+   });
+
+   $("#play").click(function() {
+      $(this).addClass("hide");
+      $("#pause").removeClass("hide");
+   });
+   $("#pause").click(function() {
+      $(this).addClass("hide");
+      $("#play").removeClass("hide");
+   });
   });
-});
+  
+  

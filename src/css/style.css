@@ -366,8 +366,33 @@ header {
     display: flex;
     flex-direction: column; }
     .demos .cards .card {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
       margin-top: 10px;
-      padding-bottom: 10px; }
+      width: calc(100% - 25px);
+      background: #af0909;
+      flex-direction: column;
+      padding: 15px 15px;
+      border-radius: 15px; }
+      .demos .cards .card .h4 {
+        margin-left: 15px; }
+      .demos .cards .card .control {
+        width: 100%;
+        display: flex;
+        justify-content: space-between; }
+        .demos .cards .card .control .sound {
+          display: flex; }
+          .demos .cards .card .control .sound button {
+            font-size: 35px;
+            margin-left: 15px; }
+      .demos .cards .card button {
+        font-size: 55px;
+        background: transparent;
+        border: none;
+        color: white; }
+        .demos .cards .card button.hide {
+          display: none; }
 
 footer {
   height: 15px; }

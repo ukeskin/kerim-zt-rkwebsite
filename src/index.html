@@ -29,7 +29,7 @@
     </div>
     <div class="text">
       <h2>Merhaba, ben Kerim Öztürk</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Venenatis proin hendrerit cursus magna sed. Elementum, gravida fusce pharetra, erat quis nulla amet pulvinar libero. Habitasse arcu congue odio.</p>
+      <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Venenatis proin hendrerit cursus magna sed. Elementum, gravida fusce pharetra, erat quis nulla amet pulvinar libero. Habitasse arcu congue odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Venenatis proin hendrerit cursus magna sed. Elementum, gravida fusce pharetra, erat quis nulla amet pulvinar libero. Habitasse arcu congue odio.</p>
     </div>
    
   </section>
@@ -37,31 +37,56 @@
     <section class="demos">
       <h2>Çalışmalarım</h2>
       <div class="cards">
-        <div class="card"><h4>Seslendirme</h4>
-          <audio controls>
-            <source src="../assets/1.mp3">
-          </audio>
+
+        <div class="card">
+          <h4>Vodofone Reklam Seslendirme</h4>
+          <audio id = "player1" src = "../assets/1.mp3"></audio>
+            <div class="control"> 
+                <div><button class="button" id="play" onclick = "document.getElementById('player1').play()"><i class="fa fa-play-circle"></i></button>
+                  <button class="button hide" id="pause" onclick = "document.getElementById('player1').pause()"><i class="fa fa-pause-circle"></i></button></div>
+                <div class="sound">
+                  <button onclick = "document.getElementById('player1').volume -= 0.2"><i class="fa fa-volume-down"></i></button>
+                  <button onclick = "document.getElementById('player1').volume += 0.2"><i class="fa fa-volume-up"></i></button>
+                </div>
+            </div>
         </div>
-        <div class="card"><h4>Seslendirme</h4>
-          <audio controls>
-            <source src="../assets/2.mp3">
-          </audio>
+
+
+        <div class="card">
+          <h4>Vodofone Reklam Seslendirme</h4>
+          <audio id = "player2" src = "../assets/2.mp3"></audio>
+            <div class="control"> 
+                <div><button class="button" id="play2" onclick = "document.getElementById('player2').play()"><i class="fa fa-play-circle"></i></button>
+                  <button class="button hide" id="pause2" onclick = "document.getElementById('player2').pause()"><i class="fa fa-pause-circle"></i></button></div>
+                <div class="sound">
+                  <button onclick = "document.getElementById('player2').volume -= 0.2"><i class="fa fa-volume-down"></i></button>
+                  <button onclick = "document.getElementById('player2').volume += 0.2"><i class="fa fa-volume-up"></i></button>
+                </div>
+            </div>
         </div>
-        <div class="card"><h4>Seslendirme</h4>
-          <audio controls>
-            <source src="../assets/3.mp3">
-          </audio>
+
+        <div class="card">
+          <h4>Vodofone Reklam Seslendirme</h4>
+          <audio id = "player3" src = "../assets/3.mp3"></audio>
+            <div class="control"> 
+                <div><button class="button" id="play3" onclick = "document.getElementById('player3').play()"><i class="fa fa-play-circle"></i></button>
+                  <button class="button hide" id="pause3" onclick = "document.getElementById('player3').pause()"><i class="fa fa-pause-circle"></i></button></div>
+                <div class="sound">
+                  <button onclick = "document.getElementById('player3').volume -= 0.2"><i class="fa fa-volume-down"></i></button>
+                  <button onclick = "document.getElementById('player3').volume += 0.2"><i class="fa fa-volume-up"></i></button>
+                </div>
+            </div>
         </div>
+        
       </div>
     </section>
 </div>
 
 <div class="container">
-  <footer>
-    
-  </footer>
+  <footer></footer>
 </div>
-
+<script src="https://code.jquery.com/jquery-1.12.4.min.js">
+</script>
 <script src="../src/js/index.js"></script>
    
 </body>

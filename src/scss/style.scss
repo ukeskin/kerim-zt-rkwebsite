@@ -82,15 +82,45 @@
      .cards{
          display: flex;
          flex-direction: column;
-
+         
       .card{
-       // background:red;
+         //* {border:1px blue solid}
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
         margin-top: 10px;
-        padding-bottom: 10px;
+        width: calc(100% - 25px);
+        background: rgb(175, 9, 9);
+        flex-direction: column;
+        padding: 15px 15px;
+        border-radius: 15px;
+        .h4{
+          margin-left: 15px;
+        }
+        .control{
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+        .sound{
+          display: flex;
+          button{
+            font-size: 35px;
+            margin-left: 15px;
+          }
+        }
+        }
+      button{
+        font-size: 55px;
+        background:transparent;
+        border:none;
+        color:white;
+        &.hide{
+          display: none;
+        }
       }
     }
 }
-
+ }
 footer{
   height: 15px;
 }

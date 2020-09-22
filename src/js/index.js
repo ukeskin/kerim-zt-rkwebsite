@@ -8,22 +8,22 @@ $(document).ready(function() {
        $("#play").removeClass("hide");
     });
 
-    $("#play").click(function() {
+    $("#play2").click(function() {
       $(this).addClass("hide");
-      $("#pause").removeClass("hide");
+      $("#pause2").removeClass("hide");
    });
-   $("#pause").click(function() {
+   $("#pause2").click(function() {
       $(this).addClass("hide");
-      $("#play").removeClass("hide");
+      $("#play2").removeClass("hide");
    });
 
-   $("#play").click(function() {
+   $("#play3").click(function() {
       $(this).addClass("hide");
-      $("#pause").removeClass("hide");
+      $("#pause3").removeClass("hide");
    });
-   $("#pause").click(function() {
+   $("#pause3").click(function() {
       $(this).addClass("hide");
-      $("#play").removeClass("hide");
+      $("#play3").removeClass("hide");
    });
   });
   

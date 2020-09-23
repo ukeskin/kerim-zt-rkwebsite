@@ -17,6 +17,7 @@ $(document).ready(function() {
       $("#play2").removeClass("hide");
    });
 
+
    $("#play3").click(function() {
       $(this).addClass("hide");
       $("#pause3").removeClass("hide");
@@ -27,4 +28,4 @@ $(document).ready(function() {
    });
   });
   
-  
+  console.log("2131231")

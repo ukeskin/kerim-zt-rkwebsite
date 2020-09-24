@@ -1,5 +1,5 @@
 /*Imports*/
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;\a 400;\a 700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;\a 400;\a   700&display=swap");
 html {
   line-height: 1.15;
   /* 1 */
@@ -299,14 +299,15 @@ template {
 [hidden] {
   display: none; }
 
-html, body {
+html,
+body {
   width: 100%;
   height: 100%;
   scroll-behavior: smooth; }
 
 body {
   background: #131313;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   color: white;
   display: flex;
   flex-direction: column; }
@@ -334,7 +335,7 @@ header {
       padding-left: 10px;
       display: block;
       font-size: 23px;
-      border-left: 1px solid #C4C4C4; }
+      border-left: 1px solid #c4c4c4; }
       header .social-media-icon:first-child {
         border-left: none; }
 
@@ -355,7 +356,7 @@ header {
   .intro p {
     font-size: 20px;
     font-weight: 300;
-    color: #BABABA;
+    color: #bababa;
     line-height: 37px; }
 
 .demos {
@@ -367,32 +368,23 @@ header {
     flex-direction: column; }
     .demos .cards .card {
       display: flex;
-      justify-content: space-between;
-      align-items: flex-start;
-      margin-top: 10px;
       width: calc(100% - 25px);
-      background: #af0909;
-      flex-direction: column;
-      padding: 15px 15px;
-      border-radius: 15px; }
-      .demos .cards .card .h4 {
-        margin-left: 15px; }
-      .demos .cards .card .control {
-        width: 100%;
-        display: flex;
-        justify-content: space-between; }
-        .demos .cards .card .control .sound {
-          display: flex; }
-          .demos .cards .card .control .sound button {
-            font-size: 35px;
-            margin-left: 15px; }
-      .demos .cards .card button {
-        font-size: 55px;
-        background: transparent;
-        border: none;
-        color: white; }
-        .demos .cards .card button.hide {
-          display: none; }
+      background: #d42121;
+      padding: 5px 10px;
+      border-radius: 10px;
+      margin-top: 25px; }
+  .demos button {
+    font-size: 35px;
+    background: transparent;
+    border: none;
+    color: white;
+    margin-right: 8px; }
+    .demos button.hide {
+      display: none; }
+
+.gallery {
+  display: flex;
+  flex-direction: row; }
 
 footer {
   height: 15px; }
@@ -415,7 +407,7 @@ footer {
       header .intro p {
         font-size: 20px;
         font-weight: 300;
-        color: #BABABA;
+        color: #bababa;
         width: 580px; }
       header .intro .avatar img {
         width: 250px; } }

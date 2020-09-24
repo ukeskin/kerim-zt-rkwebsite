@@ -7,8 +7,7 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Kerim Öztürk</title>
     <script src="https://use.fontawesome.com/42924ff2b8.js"></script>
-    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-    <script src="../src/js/index.js"></script>
+
 </head>
 
 <body>
@@ -41,19 +40,79 @@
       <div class="cards">
 
         <div class="card">
-          <h4>Vodofone Reklam Seslendirme</h4>
-          <iframe width="100%" height="315" src="https://www.youtube.com/embed/WwyDsCIN-Do?controls=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <button class="button " id="play">
+            <i class="fa fa-play"></i>
+          </button>
+          <button class="button hide" id="pause">
+            <i class="fa fa-pause"></i>
+          </button>
+          <audio id="player">
+            <source src="../assets/1.mp3">
+          </audio>
+          <h4>Vodofone reklam seslendirme</h4>
         </div>
+        
+        <div class="card">
+          <button class="button " id="play2">
+            <i class="fa fa-play"></i>
+          </button>
+          <button class="button hide" id="pause2">
+            <i class="fa fa-pause"></i>
+          </button>
+          <audio id="player2">
+            <source src="../assets/2.mp3">
+          </audio>
+          <h4>Vodofone reklam seslendirme</h4>
+        </div>
+        
+        <div class="card">
+          <button class="button " id="play3">
+            <i class="fa fa-play"></i>
+          </button>
+          <button class="button hide" id="pause3">
+            <i class="fa fa-pause"></i>
+          </button>
+          <audio id="player3">
+            <source src="../assets/3.mp3">
+            </audio>
+            <h4>Vodofone reklam seslendirme</h4>
+          </div>
 
     
       </div>
     </section>
+
+
+  <section class="gallery">
+    <div class="block">
+      <img src="https://picsum.photos/200">
+    </div>
+    <div class="block">
+      <img src="https://picsum.photos/200">
+    </div>
+    <div class="block">
+      <img src="https://picsum.photos/200">
+    </div>
+    <div class="block">
+      <img src="https://picsum.photos/200">
+    </div>
+    <div class="block">
+      <img src="https://picsum.photos/200">
+    </div>
+    <div class="block">
+      <img src="https://picsum.photos/200">
+    </div>
+
+  </section>
 </div>
 
 <div class="container">
   <footer></footer>
 </div>
 
-   
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="../src/js/index.js">
+console.log("easessdsde")
+</script>   
 </body>
 </html>

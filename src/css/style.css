@@ -1,5 +1,5 @@
 /*Imports*/
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;\a 400;\a   700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap");
 html {
   line-height: 1.15;
   /* 1 */
@@ -349,7 +349,7 @@ header {
     .intro .avatar img {
       width: 225px;
       border-radius: 100%;
-      border: 5px solid white; }
+      border: 5px solid rgba(255, 255, 255, 0.1); }
   .intro h2 {
     font-size: 20px;
     font-weight: 700; }
@@ -383,8 +383,34 @@ header {
       display: none; }
 
 .gallery {
+  margin-top: 40px;
   display: flex;
-  flex-direction: row; }
+  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: start; }
+  .gallery .slider {
+    background: #d42121;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: row;
+    width: 100%; }
+  .gallery .block {
+    padding-right: 5px; }
+    .gallery .block img {
+      width: 250px; }
+
+.mail {
+  margin-top: 40px; }
+  .mail label {
+    font-size: 20px; }
+  .mail input {
+    width: 100%;
+    margin-top: 5px;
+    min-height: 100px; }
+  .mail textarea {
+    width: 100%;
+    margin-top: 5px;
+    min-height: 100px; }
 
 footer {
   height: 15px; }
@@ -398,16 +424,18 @@ footer {
     height: 125px; }
     header .logo {
       font-size: 24px; }
-    header .intro {
-      padding-top: 0px;
-      display: flex;
-      flex-direction: row-reverse;
-      align-items: center;
-      justify-content: space-between; }
-      header .intro p {
-        font-size: 20px;
-        font-weight: 300;
-        color: #bababa;
-        width: 580px; }
-      header .intro .avatar img {
-        width: 250px; } }
+  .intro {
+    padding-top: 0px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between; }
+    .intro p {
+      font-size: 20px;
+      font-weight: 300;
+      color: #bababa;
+      width: 580px; }
+    .intro .avatar img {
+      width: 250px; }
+  .demos .card {
+    width: 50px; } }

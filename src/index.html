@@ -8,6 +8,29 @@
     <title>Kerim Öztürk</title>
     <script src="https://use.fontawesome.com/42924ff2b8.js"></script>
 
+    <script src= 
+    "https://smtpjs.com/v3/smtp.js"> 
+  </script> 
+  
+  <script type="text/javascript"> 
+    function sendEmail() { 
+      Email.send({ 
+        Host: "smtp.gmail.com", 
+        Username: "sender@email_address.com", 
+        Password: "Enter your password", 
+        To: 'receiver@email_address.com', 
+        From: "sender@email_address.com", 
+        Subject: "Sending Email using javascript", 
+        Body: "Well that was easy!!", 
+      }) 
+        .then(function (message) { 
+          alert("mail sent successfully") 
+        }); 
+    } 
+  </script> 
+
+
+
 </head>
 
 <body>
@@ -34,7 +57,6 @@
     </div>
    
   </section>
-
     <section class="demos">
       <h2>Çalışmalarım</h2>
       <div class="cards">
@@ -84,25 +106,41 @@
 
 
   <section class="gallery">
-    <div class="block">
-      <img src="https://picsum.photos/200">
+    <h2>Galeri</h2>
+    <div class="slider">
+      <div class="block">
+        <img src="https://picsum.photos/200">
+      </div>
+      <div class="block">
+        <img src="https://picsum.photos/200">
+      </div>
+      <div class="block">
+        <img src="https://picsum.photos/200">
+      </div>
+      <div class="block">
+        <img src="https://picsum.photos/200">
+      </div>
+      <div class="block">
+        <img src="https://picsum.photos/200">
+      </div>
+      <div class="block">
+        <img src="https://picsum.photos/200">
+      </div>
+      <div class="block">
+        <img src="https://picsum.photos/200">
+      </div>
+      <div class="block">
+        <img src="https://picsum.photos/200">
+      </div>
     </div>
-    <div class="block">
-      <img src="https://picsum.photos/200">
-    </div>
-    <div class="block">
-      <img src="https://picsum.photos/200">
-    </div>
-    <div class="block">
-      <img src="https://picsum.photos/200">
-    </div>
-    <div class="block">
-      <img src="https://picsum.photos/200">
-    </div>
-    <div class="block">
-      <img src="https://picsum.photos/200">
-    </div>
+  </section>
 
+  <section class="mail">
+    <h2>Bana Ulaş</h2>
+    <form method="post"> 
+      <input type="button" value="Send Email" 
+          onclick="sendEmail()" /> 
+    </form> 
   </section>
 </div>
 

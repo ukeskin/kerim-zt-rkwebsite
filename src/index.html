@@ -1,156 +1,160 @@
 <!DOCTYPE html>
 <html lang="tr">
 
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <title>Kerim Öztürk</title>
     <script src="https://use.fontawesome.com/42924ff2b8.js"></script>
+  </head>
 
-    <script src= 
-    "https://smtpjs.com/v3/smtp.js"> 
-  </script> 
-  
-  <script type="text/javascript"> 
-    function sendEmail() { 
-      Email.send({ 
-        Host: "smtp.gmail.com", 
-        Username: "sender@email_address.com", 
-        Password: "Enter your password", 
-        To: 'receiver@email_address.com', 
-        From: "sender@email_address.com", 
-        Subject: "Sending Email using javascript", 
-        Body: "Well that was easy!!", 
-      }) 
-        .then(function (message) { 
-          alert("mail sent successfully") 
-        }); 
-    } 
-  </script> 
+  <body>
+    <div class="container">
+      <header>
+        <div class="logo">KERİM ÖZTÜRK</div>
 
+        <div class="social-media">
+          <a class="social-media-icon" href="mailto:ukeskin2626@gmail.com"><i class="fa fa-envelope"></i></a>
 
-
-</head>
-
-<body>
- <div class="container">
-  <header>
-    <div class="logo">KERİM ÖZTÜRK</div> 
-
-    <div class="social-media">
-      <a href="https://www.instagram.com/kerim_ozturk/" class="social-media-icon"><i class="fa fa-instagram"></i></a>
-      <a href="https://twitter.com/kerim_ozturk" class="social-media-icon"><i class="fa fa-twitter"></i></a>
-      <a href="https://www.linkedin.com/in/kerim-%C3%B6zt%C3%BCrk-0183b6114/" class="social-media-icon"><i class="fa fa-linkedin"></i></a>
-    </div>
- 
-     
-   </header>
-
-  <section class="intro">
-    <div class="avatar">
-      <img src="https://pbs.twimg.com/profile_images/1153264706024591361/U3HSqyjJ_400x400.jpg" alt="">
-    </div>
-    <div class="text">
-      <h2>Merhaba, ben Kerim Öztürk</h2>
-      <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Venenatis proin hendrerit cursus magna sed. Elementum, gravida fusce pharetra, erat quis nulla amet pulvinar libero. Habitasse arcu congue odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Venenatis proin hendrerit cursus magna sed. Elementum, gravida fusce pharetra, erat quis nulla amet pulvinar libero. Habitasse arcu congue odio.</p>
-    </div>
-   
-  </section>
-    <section class="demos">
-      <h2>Çalışmalarım</h2>
-      <div class="cards">
-
-        <div class="card">
-          <button class="button " id="play">
-            <i class="fa fa-play"></i>
-          </button>
-          <button class="button hide" id="pause">
-            <i class="fa fa-pause"></i>
-          </button>
-          <audio id="player">
-            <source src="../assets/1.mp3">
-          </audio>
-          <h4>Vodofone reklam seslendirme</h4>
+          <a href="https://www.instagram.com/kerim_ozturk/"
+            class="social-media-icon"><i class="fa fa-instagram"></i></a>
+          <a href="https://twitter.com/kerim_ozturk" class="social-media-icon"><i
+              class="fa fa-twitter"></i></a>
+          <a
+            href="https://www.linkedin.com/in/kerim-%C3%B6zt%C3%BCrk-0183b6114/"
+            class="social-media-icon"><i class="fa fa-linkedin"></i></a>
         </div>
-        
-        <div class="card">
-          <button class="button " id="play2">
-            <i class="fa fa-play"></i>
-          </button>
-          <button class="button hide" id="pause2">
-            <i class="fa fa-pause"></i>
-          </button>
-          <audio id="player2">
-            <source src="../assets/2.mp3">
-          </audio>
-          <h4>Vodofone reklam seslendirme</h4>
+
+
+      </header>
+
+      <section class="intro">
+        <div class="avatar">
+          <img
+            src="https://pbs.twimg.com/profile_images/1153264706024591361/U3HSqyjJ_400x400.jpg"
+            alt="">
         </div>
-        
-        <div class="card">
-          <button class="button " id="play3">
-            <i class="fa fa-play"></i>
-          </button>
-          <button class="button hide" id="pause3">
-            <i class="fa fa-pause"></i>
-          </button>
-          <audio id="player3">
-            <source src="../assets/3.mp3">
+        <div class="text">
+          <h2>Merhaba, ben Kerim Öztürk</h2>
+          <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Venenatis
+            proin hendrerit cursus magna sed. Elementum, gravida fusce pharetra,
+            erat quis nulla amet pulvinar libero. Habitasse arcu congue odio.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Venenatis
+            proin hendrerit cursus magna sed. Elementum, gravida fusce pharetra,
+            erat quis nulla amet pulvinar libero. Habitasse arcu congue odio.</p>
+        </div>
+
+      </section>
+      <section class="demos">
+        <h2>Çalışmalarım</h2>
+        <div class="cards">
+
+          <div class="card">
+            <button class="button"id="play">
+              <i class="fa fa-play"></i>
+            </button>
+            <button class="button hide" id="pause">
+              <i class="fa fa-pause"></i>
+            </button>
+            <audio id="player">
+              <source src="assets/1.mp3">
             </audio>
             <h4>Vodofone reklam seslendirme</h4>
           </div>
 
-    
-      </div>
-    </section>
+          <div class="card">
+            <button class="button"id="play2">
+              <i class="fa fa-play"></i>
+            </button>
+            <button class="button hide" id="pause2">
+              <i class="fa fa-pause"></i>
+            </button>
+            <audio id="player2">
+              <source src="assets/2.mp3">
+            </audio>
+            <h4>Vodofone reklam seslendirme</h4>
+          </div>
+
+          <div class="card">
+            <button class="button"id="play3">
+              <i class="fa fa-play"></i>
+            </button>
+            <button class="button hide" id="pause3">
+              <i class="fa fa-pause"></i>
+            </button>
+            <audio id="player3">
+              <source src="assets/3.mp3">
+            </audio>
+            <h4>Vodofone reklam seslendirme</h4>
+          </div>
 
 
-  <section class="gallery">
-    <h2>Galeri</h2>
-    <div class="slider">
-      <div class="block">
-        <img src="https://picsum.photos/200">
-      </div>
-      <div class="block">
-        <img src="https://picsum.photos/200">
-      </div>
-      <div class="block">
-        <img src="https://picsum.photos/200">
-      </div>
-      <div class="block">
-        <img src="https://picsum.photos/200">
-      </div>
-      <div class="block">
-        <img src="https://picsum.photos/200">
-      </div>
-      <div class="block">
-        <img src="https://picsum.photos/200">
-      </div>
-      <div class="block">
-        <img src="https://picsum.photos/200">
-      </div>
-      <div class="block">
-        <img src="https://picsum.photos/200">
-      </div>
-    </div>
-  </section>
+        </div>
+      </section>
 
-  <section class="mail">
-    <h2>Bana Ulaş</h2>
-    <form method="post"> 
-      <input type="button" value="Send Email" 
-          onclick="sendEmail()" /> 
-    </form> 
-  </section>
-</div>
 
-<div class="container">
-  <footer></footer>
-</div>
+      <section class="gallery">
+        <h2>Galeri</h2>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="../src/js/index.js">
-console.log("easessdsde")
-</script>   
-</body>
+      <div style="display: none;" class="row">
+        <div class="column">
+          <img src="https://picsum.photos/200">
+          <img src="https://picsum.photos/200">
+          <img src="https://picsum.photos/200">
+        </div>
+        <div class="column">
+          <img src="https://picsum.photos/200">
+          <img src="https://picsum.photos/200">
+          <img src="https://picsum.photos/200">
+        </div>
+      </div>
+
+        <div class="slider">
+          <div class="block">
+            <img src="https://picsum.photos/200">
+          </div>
+          <div class="block">
+            <img src="https://picsum.photos/200">
+          </div>
+          <div class="block">
+            <img src="https://picsum.photos/200">
+          </div>
+          <div class="block">
+            <img src="https://picsum.photos/200">
+          </div>
+          <div class="block">
+            <img src="https://picsum.photos/200">
+          </div>
+          <div class="block">
+            <img src="https://picsum.photos/200">
+          </div>
+          <div class="block">
+            <img src="https://picsum.photos/200">
+          </div>
+          <div class="block">
+            <img src="https://picsum.photos/200">
+          </div>
+        </div>
+      </section>
+
+      <!-- <section class="mail">
+        <h2>Bana Ulaş</h2>
+        <div class="card">
+          <button href="mailto:ukeskin2626@gmail.com"><i class="fa fa-envelope"></i></button>
+          <h2>E-Posta Gönder</h2>
+          </div>
+        </section> -->
+      </div>
+
+      <div class="container">
+        <footer></footer>
+      </div>
+
+      <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="../src/js/index.js"></script>
+
+    </script>
+  </body>
 </html>
